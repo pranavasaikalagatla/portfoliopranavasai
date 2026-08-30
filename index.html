@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='white'%3EPS%3C/text%3E%3C/svg%3E" />
-    <a href="contact.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='white'%3EPS%3C/text%3E%3C/svg%3E" />
     <title>Portfolio Pranavasai</title>
 
 <!--page id`s-->
@@ -524,7 +523,7 @@ header .content p {
 }
 
 .contact-btn {
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 18px;
     border: 1px solid #00ffcc;
     border-radius: 12px;
@@ -537,7 +536,10 @@ header .content p {
 
 /* ---------- MOBILE ---------- */
 
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 1000px) {
+
     .skills-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -547,17 +549,25 @@ header .content p {
     }
 }
 
+
 @media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+
     .navbar {
         position: sticky;
+        top: 0;
         flex-direction: column;
         align-items: stretch;
         max-height: none;
+        width: 100%;
+        gap: 5px;
     }
 
     .navbar-left,
     .navbar-right {
         gap: 4px;
+        width: 100%;
     }
 
     .navbar a {
@@ -565,14 +575,42 @@ header .content p {
         padding: 7px 8px;
     }
 
+
+    /* ---------- HERO ---------- */
+
     header {
         min-height: 90vh;
         padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+
+    header .content {
+        width: 100%;
+    }
+
+    header .content h1 {
+        font-size: clamp(2rem, 9vw, 3rem);
+        line-height: 1.2;
+    }
+
+    header .content h2 {
+        font-size: 1.7rem;
+    }
+
+    header .content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- ABOUT ---------- */
 
     .container {
         grid-template-columns: 1fr;
         padding: 70px 0;
+        width: 92%;
+        gap: 20px;
     }
 
     .box {
@@ -580,16 +618,157 @@ header .content p {
         padding: 25px;
     }
 
+    .box .content h1 {
+        font-size: 25px;
+    }
+
+    .box h4 {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- SOCIAL MEDIA ---------- */
+
+    .links {
+        padding: 60px 15px;
+    }
+
+    .social-link {
+        gap: 15px;
+    }
+
+    .social-link a {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    /* ---------- INTERNSHIPS ---------- */
+
+    .ski {
+        padding: 60px 15px;
+    }
+
+    .skills-box {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skills-item {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .skills-image {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-wrapper {
+        padding: 60px 15px;
+    }
+
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skill {
+        padding: 12px 5px;
+    }
+
+    .circular-progress {
+        width: 100px;
+        height: 100px;
+        transform: scale(.85);
+        margin-bottom: 5px;
+    }
+
+    .skill-name {
+        font-size: 12px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects {
+        padding: 60px 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .project-tech {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* ---------- CERTIFICATES ---------- */
+
+    .container-cert {
+        padding: 60px 15px;
+    }
+
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-container {
+        height: 300px;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact {
+        padding: 60px 15px;
+    }
+
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .contact h2 {
+        font-size: 16px;
+        word-break: break-word;
+    }
+
+    .contact h3 {
+        font-size: 16px;
     }
 
     .contact-btn {
         margin: 15px 0 0;
+        display: inline-block;
+        font-size: 13px;
     }
 }
 
+
+/* ---------- SMALL MOBILE ---------- */
+
 @media (max-width: 480px) {
+
+    /* Navbar */
+
     .navbar-left,
     .navbar-right {
         display: grid;
@@ -599,12 +778,44 @@ header .content p {
 
     .navbar a {
         text-align: center;
+        font-size: 11px;
+        padding: 8px 5px;
     }
+
+
+    /* Hero */
 
     header {
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    header .content h1 {
+        font-size: 1.8rem;
+    }
+
+    header .content h2 {
+        font-size: 1.4rem;
+    }
+
+    header .content p {
+        font-size: .9rem;
+    }
+
+
+    /* Social Media */
+
+    .social-link {
+        gap: 12px;
+    }
+
+    .social-link a {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    /* Skills */
 
     .skills-container {
         grid-template-columns: 1fr 1fr;
@@ -616,11 +827,80 @@ header .content p {
     }
 
     .circular-progress {
-        transform: scale(.9);
+        transform: scale(.75);
     }
+
+    .skill-name {
+        font-size: 11px;
+    }
+
+
+    /* Projects */
+
+    .project-card {
+        padding: 18px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+
+    /* Certificates */
 
     .card-container {
         height: 300px;
+    }
+
+
+    /* Contact */
+
+    .contact h1 {
+        font-size: 17px;
+    }
+
+    .contact h2,
+    .contact h3 {
+        font-size: 14px;
+    }
+    .contact-btn {
+        font-size: 10px;
+    }
+}
+
+
+/* ---------- VERY SMALL PHONES ---------- */
+
+@media (max-width: 360px) {
+
+    .navbar a {
+        font-size: 10px;
+        padding: 7px 3px;
+    }
+
+    header .content h1 {
+        font-size: 1.6rem;
+    }
+
+    header .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .skills-container {
+        gap: 8px;
+    }
+
+    .skill-name {
+        font-size: 10px;
+    }
+
+    .social-link a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-card {
+        padding: 15px;
     }
 }
 </style>
@@ -1356,7 +1636,6 @@ header::after {
     <div id="particles"></div>
     <div id="scroll-progress"></div>
 
-
 <!--progress circles-->    
     <script>
        document.addEventListener("DOMContentLoaded", function () {
@@ -1406,7 +1685,6 @@ header::after {
         }
     </script>
 
-
     <nav class="navbar">
         <div class="navbar-left">
             <a href="javascript:void(0);" class="active" onclick="showSection('home')">Home</a>
@@ -1437,7 +1715,6 @@ header::after {
         
     </header>   
     
-
     <div class="container reveal" id="About">
         <div class="box">
             <div class="content">
